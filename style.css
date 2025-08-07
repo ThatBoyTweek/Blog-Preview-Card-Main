@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Figtree', Arial, sans-serif;
+  background: #f4d04e;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#blog-card.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 #000;
+  max-width: 384px;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1.5px solid #000;
+}
+
+#card-image.card__image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+#card-content.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#card-tag.card__tag {
+  background: #f4d04e;
+  color: #111;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 4px;
+  align-self: flex-start;
+}
+
+#card-date.card__date {
+  color: #6c6c6c;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+#card-title.card__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #111;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+#card-title.card__title:hover {
+  color: #f4d04e;
+}
+
+#card-desc.card__desc {
+  color: #6c6c6c;
+  font-size: 1rem;
+  margin: 0;
+}
+
+#card-footer.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+#card-avatar.card__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #f4d04e;
+}
+
+#card-author.card__author {
+  font-weight: 800;
+  color: #111;
+  font-size: 1rem;
+}
+
+#attribution.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #6c6c6c;
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  margin: 0;
+  width: max-content;
+  z-index: 10;
+}
+#attribution.attribution a {
+  color: hsl(228, 45%, 44%);
+}
